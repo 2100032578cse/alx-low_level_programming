@@ -1,9 +1,13 @@
 #include<sstdio>
-/*print without printf and puts*/
+#include<unstd.h>
+
+/**
+ * print without printf and puts
+ * main - Entry point
+ * Return: will return 1 (Success)
+ */
 int main(void)
 {
-	char chs[] = "\"and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-
-	fwrite(chs);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
