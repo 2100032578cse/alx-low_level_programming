@@ -2,8 +2,9 @@
 #include<unstd.h>
 
 /**
- * print without printf and puts
  * main - Entry point
+ *
+ * print without printf and puts
  * Return: will return 1 (Success)
  */
 int main(void)
