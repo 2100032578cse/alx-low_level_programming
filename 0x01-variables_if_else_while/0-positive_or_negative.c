@@ -5,8 +5,11 @@
 
 /* betty style doc for function main goes there */
 
-/*
- * main - Entry point
+/**
+ * main - Entry point ,print a random number and check if it
+ * is negative,positive or zero
+ *
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
