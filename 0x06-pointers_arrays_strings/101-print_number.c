@@ -8,6 +8,7 @@
 void print_number(int n)
 {
 	unsigned int newN = n;
+
 	if (n < 0)
 	{
 		newN = -newN;
