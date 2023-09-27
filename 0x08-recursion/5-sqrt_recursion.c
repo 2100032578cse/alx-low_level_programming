@@ -13,7 +13,7 @@ int Sqrt(int n, int res)
 	else if ((res * res) >= n)
 		return (-1);
 	else
-		return (Sprt(n, res + 1));
+		return (Sqrt(n, res + 1));
 }
 /**
  * _sqrt_recursion - returns a square toot of n;
