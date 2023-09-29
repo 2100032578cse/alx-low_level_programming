@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	cents = atoi(argv[1]);
+	if (cents < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 	while (cents > 0)
 	{
 
@@ -42,6 +47,8 @@ int main(int argc, char *argv[])
 		{
 			cents -= 1;
 		}
+		else
+			break;
 		coins++;
 	}
 	printf("%d\n", coins);
