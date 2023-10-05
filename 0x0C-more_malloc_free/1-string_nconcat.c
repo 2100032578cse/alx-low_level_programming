@@ -8,14 +8,13 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len1 = 0, cc = 0;
 	char *news;
-	int k, ii, jj;
+	unsigned int len1 = 0, cc = 0, k, ii, jj;
 
-	if (s2 == NULL)
-		s2 = "";
 	if (s1 == NULL)
 		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	k = 0;
 	while (s1[k])
 	{
@@ -33,5 +32,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		news[cc++] = s2[jj];
 	}
+	news[c] = '\0';
 	return (news);
 }
