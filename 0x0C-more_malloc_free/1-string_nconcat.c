@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * string_nconcat - concatenete two strings
  * @s1: string input
@@ -32,6 +33,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		news[cc++] = s2[jj];
 	}
-	news[c] = '\0';
+	news[cc] = '\0';
 	return (news);
 }
