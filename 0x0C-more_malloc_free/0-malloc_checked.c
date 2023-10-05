@@ -9,7 +9,7 @@ void *malloc_checked(unsigned int b)
 	char *memory;
 
 	memory = malloc(b);
-	if (memoty == NULL)
+	if (memory == NULL)
 		exit(98);
 	return (memory);
 }
