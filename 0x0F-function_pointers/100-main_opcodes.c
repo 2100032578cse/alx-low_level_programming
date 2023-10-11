@@ -23,10 +23,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	while (c)
+	while (c--)
 	{
 		printf("%02x%c", *mem++ & 0xff, c ? ' ' : '\n');
-		c--;
+		/*c--;*/
 	}
 
 	return (0);
