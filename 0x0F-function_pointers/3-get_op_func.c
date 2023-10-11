@@ -5,10 +5,9 @@
  * @s: operations
  * Return: returns a pointer to the function
 */
-
 int (*get_op_func(char *s))(int, int)
 {
-	int i;
+	int i = 0;
 	op_t ops[] = {
 		{ "+", op_add },
 		{ "-", op_sub },
@@ -17,10 +16,13 @@ int (*get_op_func(char *s))(int, int)
 		{ "%", op_mod },
 		{ NULL, NULL }
 	};
-	i = 0;
-	while (ops[i].op != NULL && *(ops[i].op) != *s)
+
+	while (s && ops[i].op != NULL)
 	{
-		i++;
+		if (!strcmp(s, ops[i].op))
+			return (ops[i].f);
+		++i;
 	}
-	return (ops[i].f);
+
+	return (NULL);
 }
