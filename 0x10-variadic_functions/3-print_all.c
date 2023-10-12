@@ -7,13 +7,13 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list vl;
+	va_list ls;
 	char *str;
 	int i;
 
-	/*i = 0;*/
+	i = 0;
 	va_start(ls, format);
-	for (i = 0; format && format[i]; i++)
+	for (; format && format[i]; i++)
 	{
 		switch (format[i])
 		{
