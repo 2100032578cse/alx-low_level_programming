@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include<stdio.h>
-
+#include<stdarg.h>
 /**
  * print_all - Function that prints anything
  * @format: a way to print a value
@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 
 	i = 0;
 	va_start(ls, format);
-	while (format && format[i])
+	for (; format && format[i]; i++)
 	{
 		switch (format[i])
 		{
@@ -39,7 +39,6 @@ void print_all(const char * const format, ...)
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
 		format[i] == 's') && format[(i + 1)] != '\0')
 			printf(", ");
-		i++;
 	}
 	printf("\n");
 	va_end(ls);
