@@ -10,13 +10,13 @@ listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *s = head, *f = head;
 
-	while (f != NULL & f->next != NULL)
+	while (f != NULL && f->next != NULL)
 	{
 		s = s->next;
 		f = f->next->next;
 		if (s ==  f)
 		{
-			s == head;
+			s = head;
 			while (f != s)
 			{
 				s = s->next;
