@@ -3,6 +3,7 @@
  * add_dnodeint - add node on begin
  * @head: head poiter of node
  * @n: value of node to add
+ * Return: newnode
 */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
