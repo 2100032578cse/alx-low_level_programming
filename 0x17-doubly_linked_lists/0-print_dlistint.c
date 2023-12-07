@@ -1,4 +1,6 @@
+#include <stddef.h>
 #include "lists.h"
+
 /**
  *  print_dlistint - print the elements of dlinked list
  *  @h: head pointer
